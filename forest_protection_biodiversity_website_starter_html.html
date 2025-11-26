@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Forest Protection & Biodiversity</title>
+  <style>
+    :root{
+      --bg:#0b1e14; --fg:#e6f5ec; --muted:#b9d8c6; --accent:#66d19e; --card:#12281b;
+      --link:#8fe5bb; --border:#1e3a28;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;background:var(--bg);color:var(--fg);line-height:1.65}
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{position:sticky;top:0;backdrop-filter:blur(6px);background:rgba(11,30,20,.7);border-bottom:1px solid var(--border);z-index:10}
+    .wrap{max-width:1100px;margin-inline:auto;padding:0 18px}
+    nav{display:flex;gap:16px;align-items:center;justify-content:space-between;padding:10px 0}
+    nav .brand{font-weight:700;letter-spacing:.2px}
+    nav .links a{padding:6px 10px;border-radius:10px}
+    nav .links a:hover{background:rgba(143,229,187,.12)}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:56px 0 28px}
+    .hero h1{font-size:clamp(28px,4vw,48px);line-height:1.2;margin:0}
+    .hero p{font-size:clamp(16px,2vw,20px);color:var(--muted)}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px}
+    h2{margin-top:36px;margin-bottom:10px;font-size:clamp(22px,2.6vw,30px)}
+    h3{margin:20px 0 6px;font-size:clamp(18px,2.2vw,22px)}
+    .grid{display:grid;gap:16px}
+    .two{grid-template-columns:repeat(2,1fr)}
+    .three{grid-template-columns:repeat(3,1fr)}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}.two,.three{grid-template-columns:1fr}}
+    .stat{display:flex;align-items:center;gap:12px;padding:12px;border:1px dashed var(--border);border-radius:12px}
+    .kpi{font-size:26px;font-weight:800;color:var(--accent)}
+    .foot{margin-top:40px;border-top:1px solid var(--border);padding:22px 0;color:var(--muted);font-size:14px}
+    .tag{display:inline-block;padding:2px 8px;border:1px solid var(--border);border-radius:999px;color:var(--muted);font-size:12px;margin-right:6px}
+    .note{font-size:14px;color:var(--muted)}
+    .toc{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 18px}
+    .toc a{border:1px solid var(--border);border-radius:999px;padding:6px 10px}
+    .cite{font-size:14px;color:var(--muted)}
+    .bib li{margin-bottom:10px}
+    .callout{border-left:4px solid var(--accent);padding:10px 12px;background:rgba(102,209,158,.08);border-radius:8px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:#0b1e14;font-weight:700}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <div class="brand">Forest Protection & Biodiversity</div>
+        <div class="links">
+          <a href="#history">History</a>
+          <a href="#research">Research & Stats</a>
+          <a href="#governance">Global Governance</a>
+          <a href="#policies">Policies</a>
+          <a href="#bibliography">Bibliography</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <h1>Forests: Climate Regulators, Biodiversity Arks, Human Lifelines</h1>
+        <p>
+          Forests cover ~31% of land yet continue to decline. This site summarizes the history,
+          science, governance regimes, and policies shaping forest protection—plus a curated, annotated
+          bibliography to help you dig deeper.
+        </p>
+        <div class="toc">
+          <a href="#history">Start with history</a>
+          <a href="#research">See the data</a>
+          <a href="#governance">Understand regimes</a>
+          <a href="#policies">Compare policy options</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Quick facts</h3>
+        <div class="grid">
+          <div class="stat"><div class="kpi">10–12M ha</div> annual forest loss (recent years)</div>
+          <div class="stat"><div class="kpi">~80%</div> of terrestrial species live in forests</div>
+          <div class="stat"><div class="kpi">2 Gt CO₂</div> absorbed annually by forests</div>
+        </div>
+        <p class="note">Citations listed below; replace any placeholder numbers with figures from your chosen sources.</p>
+      </div>
+    </section>
+
+    <section id="history">
+      <h2>History: How Forests Reached the Global Agenda</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>Early recognition → Global frameworks</h3>
+          <p>
+            From early conservation movements to the 1992 Rio Earth Summit, forests shifted from
+            extractive resources to ecosystems requiring stewardship. The Convention on Biological
+            Diversity (CBD) formalized biodiversity protection and set the stage for linking forests to
+            climate, development, and human rights.
+          </p>
+          <p class="cite">See: CBD; GEO‑6 overview</p>
+        </div>
+        <div class="card">
+          <h3>Key milestones (global & regional)</h3>
+          <ul>
+            <li>1992: CBD signed at the Rio Earth Summit</li>
+            <li>2007–: REDD+ emerges under the UNFCCC</li>
+            <li>2020: EU Biodiversity Strategy for 2030 announced</li>
+            <li>2021–2025: UN Decade on Ecosystem Restoration</li>
+          </ul>
+          <p class="note">You can add a timeline graphic here.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="research">
+      <h2>Current Research & Statistics</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>Trends & drivers</h3>
+          <p>
+            Primary drivers include agricultural expansion (beef, soy, palm oil), illegal logging,
+            and fire. Global reports emphasize that deforestation remains high despite treaties and
+            voluntary pledges. Forest loss undermines biodiversity, water cycles, and climate targets.
+          </p>
+          <div class="callout">Tip: Embed a small chart from Global Forest Watch or FAO.</div>
+        </div>
+        <div class="card">
+          <h3>What the science says</h3>
+          <ul>
+            <li>Restoration yields biodiversity, carbon, and livelihood benefits when ecosystem‑based.</li>
+            <li>Agroforestry improves soils, water retention, and carbon stocks while supporting food security.</li>
+            <li>Indigenous stewardship correlates with lower deforestation and healthier forests.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="governance">
+      <h2>Global Governance Regime</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>Norms & Principles</h3>
+          <p>
+            Sustainability, the precautionary principle, and common but differentiated responsibilities
+            underpin international cooperation on forests and biodiversity.
+          </p>
+          <span class="tag">Norms</span>
+          <span class="tag">Precaution</span>
+          <span class="tag">CBDR</span>
+        </div>
+        <div class="card">
+          <h3>Rules & Actors</h3>
+          <p>
+            Core instruments include the CBD, UNFCCC/REDD+, and regional frameworks (e.g., the EU
+            Biodiversity Strategy 2030). Key actors: states, UN agencies, NGOs, scientists, and
+            Indigenous peoples who steward ~1/3 of intact forests.
+          </p>
+          <span class="tag">CBD</span>
+          <span class="tag">REDD+</span>
+          <span class="tag">EU 2030</span>
+        </div>
+        <div class="card">
+          <h3>Decision‑making procedures</h3>
+          <p>
+            Policy is negotiated at Conferences of the Parties (COPs) for the UNFCCC and CBD, plus
+            regional councils. Outcomes depend on monitoring, finance, and enforcement, not just
+            pledges.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="policies">
+      <h2>Policies & Policy‑making</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>Policy options</h3>
+          <ul>
+            <li>Global: REDD+ finance tied to verified emission reductions</li>
+            <li>Regional: 30×30 protection & restoration targets (EU)</li>
+            <li>Local: Community forestry, eco‑certification, ecosystem restoration</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Process & trade‑offs</h3>
+          <p>
+            Effective policy balances conservation, livelihoods, and governance capacity. Common
+            challenges include illicit supply chains, weak enforcement, and commodity demand. Strong
+            MRV (monitoring, reporting, verification) and equitable benefit‑sharing are critical.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="bibliography">
+      <h2>Annotated Bibliography (selected)</h2>
+      <ol class="bib">
+        <li><strong>FAO (2022).</strong> <em>The State of the World’s Forests 2022</em>. Key pathways: halting deforestation, restoration/agroforestry, and sustainable value chains; rich stats and case studies. Open access.</li>
+        <li><strong>UNEP (2019).</strong> <em>Global Environment Outlook 6</em>. Synthesizes environmental trends; emphasizes enforcement, finance, and urgency across biodiversity/climate.</li>
+        <li><strong>European Commission (2020).</strong> <em>EU Biodiversity Strategy for 2030</em>. Clear targets (30×30; restoration law); outlines governance and implementation tools.</li>
+        <li><strong>IUCN Red List (ongoing).</strong> <em>Barometer of Life</em>. Threat status, trends, and methods for assessing extinction risk; essential for biodiversity framing.</li>
+        <li><strong>Global Witness (2023).</strong> <em>Standing Firm</em>. Documents violence against land/environmental defenders; connects governance gaps to human security.</li>
+        <li><strong>IPBES (2019).</strong> <em>Global Assessment Summary</em>. Landmark synthesis on biodiversity loss drivers and policy pathways (free summary).</li>
+        <li><strong>Global Forest Watch (ongoing).</strong> Interactive data on tree cover loss, drivers, and country dashboards for quick visuals and stats.</li>
+        <li><strong>World Bank (data).</strong> Forest area trends, deforestation indicators, and socio‑economic context; useful for charts.\li>
+        <li><strong>UNFCCC (REDD+ hub).</strong> Guidance on results‑based payments, MRV, and country submissions.</li>
+        <li><strong>CBD (overview).</strong> Treaty architecture, objectives, COP decisions; background for the biodiversity regime.
+      </ol>
+      <p class="note">Tip: Replace these brief notes with 3–4 sentence annotations in your own words to meet your class requirement (min. 10 diverse sources).
+      </p>
+    </section>
+
+    <div class="foot">
+      Built by Jacob Avila · Replace placeholder stats with your chosen figures and add image credits if you embed visuals.
+      <a class="btn" href="#top">Back to top</a>
+    </div>
+  </main>
+</body>
+</html>
